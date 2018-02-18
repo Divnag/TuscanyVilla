@@ -92,16 +92,16 @@ section.grid-item.grid-item-5 {
 }
 
 section.grid-item.grid-item-6 {
-    margin-top: 30px;
+    margin-top: 20px;
     grid-column: 4/span 1;
     background-image: url('image/italy-mountain-villa.jpeg');
     background-size: cover;
-    height: 100%;
+    height: 150%;
     width: 100%;
 }
 
 section.grid-item.grid-item-7 {
-    margin-top: 60px;
+    margin-top: 70px;
     grid-column: 1/span 2;
     background-color: dimgrey;
     height: 80%;
@@ -114,7 +114,7 @@ section.grid-item.grid-item-7 {
 }
 
 section.grid-item.grid-item-8 {
-    margin-top: 60px;
+    margin-top: 70px;
     grid-column: 3/span 2;
     background-color: dimgrey;
     color: white;
@@ -349,3 +349,152 @@ section.grid-item.grid-item-21 {
         text-align: center;
     }
 
+section.carousel-wrapper {
+    grid-column:1/span 4;
+    height: 200px;
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+.item-1 h2{
+    font-size:50px;
+    text-align:center;
+}
+    .item-1 p {
+        font-size: 25px;
+        text-align: center;
+    }
+.item-2 {
+    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+.item-2 h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.item-2 p {
+    font-size: 25px;
+    text-align: center;
+}
+.item-3 {
+    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+.item-3 h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.item-3 p {
+    font-size: 25px;
+    text-align: center;
+}
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+section.grid-item.grid-item-22 {
+   
+    grid-column: 1/span 4;
+    background-color: dimgrey;
+    height: 100px;
+}
+
+section.grid-item.grid-item-22 h1 {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+section.grid-item.grid-item-22 h1 {
+        font-size: 15px;
+        color: white;
+        text-align: center;
+    }
+
+
+
+section.grid-item.grid-item-24{
+    grid-column:1/span 2;
+    font-size:15px;
+}
+
+section.grid-item.grid-item-25 {
+    grid-column: 4/span 1;
+}
+
+section.grid-item.grid-item-26 {
+    grid-column: 1/span 4;
+    background-color: dimgrey;
+    color:white;
+    font-size:medium;
+    text-align:center;
+    height: 100px;
+}
