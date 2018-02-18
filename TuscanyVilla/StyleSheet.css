@@ -1,10 +1,12 @@
 ﻿.container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(6,1fr);
+    width:auto;
+    
 }
 
 section.grid-item.grid-item-1 {
-    grid-column: 1/span 4;
+    grid-column: 1/span 6;
 }
 
 
@@ -37,15 +39,15 @@ li {
 }
 
 section.grid-item.grid-item-2 {
-    grid-column: 1/span 3;
+    grid-column: 1/span 5;
     background-image: url('image/tuscany-villas-sant-anna.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
 }
 
-    section.grid-item.grid-item-2 h1 {
-        font-size: 50px;
+    section.grid-item.grid-item-2 p {
+        font-size: 30px;
         color: white;
         text-align: center;
     }
@@ -57,7 +59,8 @@ section.grid-item.grid-item-2 {
     }
 
 section.grid-item.grid-item-3 {
-    grid-column: 4/span 1;
+    
+    grid-column: 6/span 1;
     height: 380px;
 }
 
@@ -67,10 +70,18 @@ section.grid-item.grid-item-3 {
 }
 
 section.grid-item.grid-item-4 {
-    grid-column: 1/span 4;
+    grid-column: 1/span 6;
     background-color: dimgrey;
     height: 100px;
 }
+
+    section.grid-item.grid-item-4 p {
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        margin-right:30px;
+
+    }
 
     section.grid-item.grid-item-4 h1 {
         font-size: 20px;
@@ -78,33 +89,29 @@ section.grid-item.grid-item-4 {
         text-align: center;
     }
 
-    section.grid-item.grid-item-4 h1 {
-        font-size: 15px;
-        color: white;
-        text-align: center;
-    }
-
 
 
 section.grid-item.grid-item-5 {
+    margin-top:20px;
     grid-column: 1/span 2;
     font-size: 15px;
+    color:dimgray;
 }
 
 section.grid-item.grid-item-6 {
     margin-top: 20px;
-    grid-column: 4/span 1;
+    grid-column: 5/span 2;
     background-image: url('image/italy-mountain-villa.jpeg');
     background-size: cover;
-    height: 150%;
-    width: 100%;
+    height: 160%;
+    width: 80%;
 }
 
 section.grid-item.grid-item-7 {
-    margin-top: 70px;
-    grid-column: 1/span 2;
+    margin-top: 190px;
+    grid-column: 1/span 3;
     background-color: dimgrey;
-    height: 80%;
+    height: 60%;
 }
 
 #img3 {
@@ -114,30 +121,32 @@ section.grid-item.grid-item-7 {
 }
 
 section.grid-item.grid-item-8 {
-    margin-top: 70px;
-    grid-column: 3/span 2;
+    margin-top: 190px;
+    grid-column: 4/span 3;
     background-color: dimgrey;
     color: white;
-    height: 80%;
+    height: 60%;
 }
 
 section.grid-item.grid-item-9 {
+    margin-top:50px;
     grid-column: 1/span 2;
     font-size: 15px;
+    color:dimgray;
 }
 
 section.grid-item.grid-item-10 {
-    margin-top: 30px;
-    grid-column: 4/span 1;
+    margin-top: 50px;
+    grid-column: 5/span 2;
     background-image: url('image/tuscany-grape-field-nature-51947.jpeg');
     background-size: cover;
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 section.grid-item.grid-item-11 {
-    margin-top: 50px;
-    grid-column: 1/span 4;
+    margin-top: 80px;
+    grid-column: 1/span 6;
     background-color: dimgrey;
     height: 100px;
 }
@@ -156,12 +165,13 @@ section.grid-item.grid-item-11 {
 
 section.grid-item.grid-item-12 {
     margin-top: 30px;
-    margin-left: 50px;
-    grid-column: 1/span 1;
+    margin-left:50px;
+    grid-column: 1/span 2;
     background-image: url('image/3b-348x348.jpg');
     background-size: cover;
-    height: 95%;
-    width: 140%;
+    height: 150%;
+    width:90%;
+   
 }
 
     section.grid-item.grid-item-12 .transbox {
@@ -184,23 +194,22 @@ section.grid-item.grid-item-12 {
     }
 
 section.grid-item.grid-item-13 {
-    grid-column: 2/span 2;
-    margin-left: 200px;
-    margin-right: 200px;
+    grid-column: 3/span 2;
+    margin-left: 70px;
+   
     font-size: 15px;
-    color:dimgray;
+    color: dimgray;
     text-align: center;
 }
 
 section.grid-item.grid-item-14 {
     margin-top: 30px;
-    margin-right: 400px;
-  
-    grid-column: 4/span 1;
+    margin-left:80px;
+    grid-column: 5/span 1;
     background-image: url('image/42-348x348.jpg');
     background-size: cover;
-    height: 95%;
-    width: 80%;
+    height: 150%;
+    width: 90%;
 }
 section.grid-item.grid-item-14 .transbox {
    
@@ -221,24 +230,22 @@ section.grid-item.grid-item-14 h3 {
     color: white;
 }
 section.grid-item.grid-item-15 {
-    margin-top:30px;
-   padding-left:70px;
-    grid-column: 1/span 1;
+    margin-top:160px;
+   padding-left:50px;
+    grid-column: 1/span 2;
    color:dimgray;
     font-size: 15px;
     text-align: center;
 }
 section.grid-item.grid-item-16 {
-   
-  margin-top:10px;
-    grid-column: 2/span 1;
-    margin-left:170px;
+    margin-top: 160px;
+    grid-column: 3/span2;
+    margin-left: 20px;
     background-image: url('image/314-348x348.jpg');
     background-size: cover;
     height: 100%;
-    width:140%;
+    width: 45%;
 }
-
     section.grid-item.grid-item-16 .transbox {
         color: white;
         margin-top: 50%;
@@ -257,20 +264,21 @@ section.grid-item.grid-item-16 {
         color: white;
     }
 section.grid-item.grid-item-17 {
-    margin-top: 30px;
-    grid-column: 4/span 1;
+  margin-left:80px;
+    grid-column: 5/span 2;
     color: dimgray;
     font-size: 15px;
-    text-align: center;
+    
+    
 }
 section.grid-item.grid-item-18 {
-   margin-top:10px;
+  margin-top:140px;
     margin-left: 50px;
-    grid-column: 1/span 1;
+    grid-column: 1/span 2;
     background-image: url('image/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
     background-size: cover;
-    height: 100%;
-    width: 140%;
+    height: 90%;
+    width: 90%;
 }
 
     section.grid-item.grid-item-18 .transbox {
@@ -294,22 +302,22 @@ section.grid-item.grid-item-18 {
     }
 
 section.grid-item.grid-item-19 {
-    grid-column: 2/span 2;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-top: 150px;
+    grid-column: 3/span 2;
+    margin-left: 50px;
     font-size: 15px;
     color: dimgray;
     text-align: center;
 }
 
 section.grid-item.grid-item-20 {
-    margin-top: 30px;
-    margin-right: 400px;
-    grid-column: 4/span 1;
+    margin-top: 140px;
+    margin-left: 100px;
+    grid-column: 5/span 2;
     background-image: url('image/Villa-Vanna-231-348x348.jpg');
     background-size: cover;
-    height: 95%;
-    width: 80%;
+    height: 100%;
+    width: 70%;
 }
 
     section.grid-item.grid-item-20 .transbox {
@@ -331,8 +339,8 @@ section.grid-item.grid-item-20 {
     }
 
 section.grid-item.grid-item-21 {
-    margin-top: 50px;
-    grid-column: 1/span 4;
+    margin-top: 100px;
+    grid-column: 1/span 6;
     background-color: dimgrey;
     height: 100px;
 }
@@ -350,10 +358,10 @@ section.grid-item.grid-item-21 {
     }
 
 section.carousel-wrapper {
-    grid-column:1/span 4;
+    grid-column:1/span 6;
     height: 200px;
     position: relative;
-    width: 1300px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -462,7 +470,7 @@ section.carousel-wrapper {
 
 section.grid-item.grid-item-22 {
    
-    grid-column: 1/span 4;
+    grid-column: 1/span 6;
     background-color: dimgrey;
     height: 100px;
 }
@@ -487,11 +495,13 @@ section.grid-item.grid-item-24{
 }
 
 section.grid-item.grid-item-25 {
-    grid-column: 4/span 1;
+    margin-top:10px;
+    grid-column: 5/span 1;
 }
 
 section.grid-item.grid-item-26 {
-    grid-column: 1/span 4;
+    margin-top:30px;
+    grid-column: 1/span 6;
     background-color: dimgrey;
     color:white;
     font-size:medium;
