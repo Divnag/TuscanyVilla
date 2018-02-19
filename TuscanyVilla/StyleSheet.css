@@ -31,11 +31,11 @@ li {
     }
 
         li a:hover:not(.active) {
-            background-color: #111;
+            background-color: blue;
         }
 
 .active:hover {
-    background-color: #111;
+    background-color:blue;
 }
 
 section.grid-item.grid-item-2 {
@@ -230,31 +230,33 @@ section.grid-item.grid-item-14 h3 {
     color: white;
 }
 section.grid-item.grid-item-15 {
-    margin-top:160px;
-   padding-left:50px;
+    margin-top: 160px;
+    padding-left: 50px;
     grid-column: 1/span 2;
-   color:dimgray;
+    color: dimgray;
     font-size: 15px;
     text-align: center;
 }
 section.grid-item.grid-item-16 {
     margin-top: 160px;
     grid-column: 3/span2;
-    margin-left: 20px;
+    grid-row:9;
+    margin-left: 10px;
     background-image: url('image/314-348x348.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 45%;
+    background-size:cover;
+    height: 95%;
+    width: 47%;
 }
-    section.grid-item.grid-item-16 .transbox {
-        color: white;
-        margin-top: 50%;
-        margin-left: 20%;
-        margin-right: 20%;
-        background-color: dimgray;
-        opacity: 0.9;
-        filter: alpha(opacity=70);
-    }
+   
+        section.grid-item.grid-item-16 .transbox {
+            color: white;
+            margin-top: 50%;
+            margin-left: 20%;
+            margin-right: 20%;
+            background-color: dimgray;
+            opacity: 0.9;
+            filter: alpha(opacity=70);
+        }
 
     section.grid-item.grid-item-16 h3 {
         margin: 3%;
@@ -263,13 +265,16 @@ section.grid-item.grid-item-16 {
         text-align: center;
         color: white;
     }
+
 section.grid-item.grid-item-17 {
-  margin-left:80px;
-    grid-column: 5/span 2;
+    grid-column: 5/span 1;
+    grid-row:9;
+    margin-left:100px;
+    margin-top:150px;
     color: dimgray;
     font-size: 15px;
-    
-    
+    text-align:center;
+    width: 80%;
 }
 section.grid-item.grid-item-18 {
   margin-top:140px;
@@ -493,7 +498,9 @@ section.grid-item.grid-item-24{
     grid-column:1/span 2;
     font-size:15px;
 }
-
+    section.grid-item.grid-item-24 .material-icons {
+        font-size: 10px;
+    }
 section.grid-item.grid-item-25 {
     margin-top:10px;
     grid-column: 5/span 1;
